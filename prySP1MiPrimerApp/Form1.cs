@@ -31,5 +31,10 @@ namespace prySP1MiPrimerApp
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
