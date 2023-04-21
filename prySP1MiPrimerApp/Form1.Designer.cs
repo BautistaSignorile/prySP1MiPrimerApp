@@ -1,6 +1,6 @@
 ﻿namespace prySP1MiPrimerApp
 {
-    partial class frm_principal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mrcDatos = new System.Windows.Forms.GroupBox();
             this.cboIngreseCategoriaDeGasto = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.cmdBorrar = new System.Windows.Forms.Button();
+            this.cmdConfirmar = new System.Windows.Forms.Button();
+            this.txtIngresoGastos = new System.Windows.Forms.TextBox();
+            this.lblIngreseCategoriaDeGasto = new System.Windows.Forms.Label();
             this.lblIngresoDeDatos = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSaldo = new System.Windows.Forms.Label();
+            this.txtSaldo = new System.Windows.Forms.TextBox();
+            this.lblDeposito = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.mrcAppRegistroMensual = new System.Windows.Forms.GroupBox();
             this.mrcDatos.SuspendLayout();
@@ -48,14 +49,12 @@
             // mrcDatos
             // 
             this.mrcDatos.Controls.Add(this.cboIngreseCategoriaDeGasto);
-            this.mrcDatos.Controls.Add(this.button2);
-            this.mrcDatos.Controls.Add(this.button1);
-            this.mrcDatos.Controls.Add(this.textBox1);
-            this.mrcDatos.Controls.Add(this.label2);
+            this.mrcDatos.Controls.Add(this.txtIngresoGastos);
+            this.mrcDatos.Controls.Add(this.lblIngreseCategoriaDeGasto);
             this.mrcDatos.Controls.Add(this.lblIngresoDeDatos);
             this.mrcDatos.Location = new System.Drawing.Point(17, 92);
             this.mrcDatos.Name = "mrcDatos";
-            this.mrcDatos.Size = new System.Drawing.Size(328, 291);
+            this.mrcDatos.Size = new System.Drawing.Size(328, 96);
             this.mrcDatos.TabIndex = 0;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "DATOS";
@@ -75,41 +74,41 @@
             this.cboIngreseCategoriaDeGasto.Size = new System.Drawing.Size(107, 21);
             this.cboIngreseCategoriaDeGasto.TabIndex = 6;
             // 
-            // button2
+            // cmdBorrar
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Location = new System.Drawing.Point(19, 201);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 37);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "BORRAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.cmdBorrar.BackColor = System.Drawing.Color.IndianRed;
+            this.cmdBorrar.Location = new System.Drawing.Point(37, 194);
+            this.cmdBorrar.Name = "cmdBorrar";
+            this.cmdBorrar.Size = new System.Drawing.Size(121, 37);
+            this.cmdBorrar.TabIndex = 5;
+            this.cmdBorrar.Text = "BORRAR";
+            this.cmdBorrar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // cmdConfirmar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(187, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 37);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "CONFIRMAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.cmdConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdConfirmar.Location = new System.Drawing.Point(205, 194);
+            this.cmdConfirmar.Name = "cmdConfirmar";
+            this.cmdConfirmar.Size = new System.Drawing.Size(121, 37);
+            this.cmdConfirmar.TabIndex = 4;
+            this.cmdConfirmar.Text = "CONFIRMAR";
+            this.cmdConfirmar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtIngresoGastos
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtIngresoGastos.Location = new System.Drawing.Point(101, 30);
+            this.txtIngresoGastos.Name = "txtIngresoGastos";
+            this.txtIngresoGastos.Size = new System.Drawing.Size(89, 20);
+            this.txtIngresoGastos.TabIndex = 2;
             // 
-            // label2
+            // lblIngreseCategoriaDeGasto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Ingrese categoria de gasto:";
+            this.lblIngreseCategoriaDeGasto.AutoSize = true;
+            this.lblIngreseCategoriaDeGasto.Location = new System.Drawing.Point(16, 69);
+            this.lblIngreseCategoriaDeGasto.Name = "lblIngreseCategoriaDeGasto";
+            this.lblIngreseCategoriaDeGasto.Size = new System.Drawing.Size(136, 13);
+            this.lblIngreseCategoriaDeGasto.TabIndex = 1;
+            this.lblIngreseCategoriaDeGasto.Text = "Ingrese categoria de gasto:";
             // 
             // lblIngresoDeDatos
             // 
@@ -120,30 +119,30 @@
             this.lblIngresoDeDatos.TabIndex = 0;
             this.lblIngresoDeDatos.Text = "Ingrese gastos:";
             // 
-            // label3
+            // lblSaldo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 458);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Saldo:";
+            this.lblSaldo.AutoSize = true;
+            this.lblSaldo.Location = new System.Drawing.Point(113, 249);
+            this.lblSaldo.Name = "lblSaldo";
+            this.lblSaldo.Size = new System.Drawing.Size(37, 13);
+            this.lblSaldo.TabIndex = 4;
+            this.lblSaldo.Text = "Saldo:";
             // 
-            // textBox3
+            // txtSaldo
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 455);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(89, 20);
-            this.textBox3.TabIndex = 4;
+            this.txtSaldo.Location = new System.Drawing.Point(156, 246);
+            this.txtSaldo.Name = "txtSaldo";
+            this.txtSaldo.Size = new System.Drawing.Size(89, 20);
+            this.txtSaldo.TabIndex = 4;
             // 
-            // label1
+            // lblDeposito
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Deposito:";
+            this.lblDeposito.AutoSize = true;
+            this.lblDeposito.Location = new System.Drawing.Point(32, 53);
+            this.lblDeposito.Name = "lblDeposito";
+            this.lblDeposito.Size = new System.Drawing.Size(52, 13);
+            this.lblDeposito.TabIndex = 7;
+            this.lblDeposito.Text = "Deposito:";
             // 
             // textBox2
             // 
@@ -156,26 +155,29 @@
             // mrcAppRegistroMensual
             // 
             this.mrcAppRegistroMensual.Controls.Add(this.textBox2);
-            this.mrcAppRegistroMensual.Controls.Add(this.label1);
-            this.mrcAppRegistroMensual.Controls.Add(this.textBox3);
-            this.mrcAppRegistroMensual.Controls.Add(this.label3);
+            this.mrcAppRegistroMensual.Controls.Add(this.cmdBorrar);
+            this.mrcAppRegistroMensual.Controls.Add(this.lblDeposito);
+            this.mrcAppRegistroMensual.Controls.Add(this.cmdConfirmar);
+            this.mrcAppRegistroMensual.Controls.Add(this.txtSaldo);
+            this.mrcAppRegistroMensual.Controls.Add(this.lblSaldo);
             this.mrcAppRegistroMensual.Controls.Add(this.mrcDatos);
             this.mrcAppRegistroMensual.Location = new System.Drawing.Point(12, 12);
             this.mrcAppRegistroMensual.Name = "mrcAppRegistroMensual";
-            this.mrcAppRegistroMensual.Size = new System.Drawing.Size(360, 513);
+            this.mrcAppRegistroMensual.Size = new System.Drawing.Size(360, 274);
             this.mrcAppRegistroMensual.TabIndex = 0;
             this.mrcAppRegistroMensual.TabStop = false;
             this.mrcAppRegistroMensual.Text = "App Registro Mensual";
             this.mrcAppRegistroMensual.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // frm_principal
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(377, 531);
+            this.ClientSize = new System.Drawing.Size(377, 290);
             this.Controls.Add(this.mrcAppRegistroMensual);
-            this.Name = "frm_principal";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmPrincipal";
             this.Text = "App de Registro Mensual";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mrcDatos.ResumeLayout(false);
@@ -190,14 +192,14 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox mrcDatos;
         private System.Windows.Forms.ComboBox cboIngreseCategoriaDeGasto;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button cmdBorrar;
+        private System.Windows.Forms.Button cmdConfirmar;
+        private System.Windows.Forms.TextBox txtIngresoGastos;
+        private System.Windows.Forms.Label lblIngreseCategoriaDeGasto;
         private System.Windows.Forms.Label lblIngresoDeDatos;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSaldo;
+        private System.Windows.Forms.TextBox txtSaldo;
+        private System.Windows.Forms.Label lblDeposito;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox mrcAppRegistroMensual;
     }
