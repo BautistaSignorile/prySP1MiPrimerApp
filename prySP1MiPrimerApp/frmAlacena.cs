@@ -16,5 +16,16 @@ namespace prySP1MiPrimerApp
         {
             InitializeComponent();
         }
+
+        private void cmdAgregarProducto_Click(object sender, EventArgs e)
+        {
+            Form Pagina2 = new frmAlacenaPaginaDeAgregado();
+            Pagina2.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
