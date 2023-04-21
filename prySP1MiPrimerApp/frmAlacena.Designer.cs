@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlacena));
             this.cmdAgregarProducto = new System.Windows.Forms.Button();
             this.mrcOrganizadorDeAlacena = new System.Windows.Forms.GroupBox();
             this.mrcOrganizadorDeAlacena.SuspendLayout();
@@ -61,6 +62,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(271, 231);
             this.Controls.Add(this.mrcOrganizadorDeAlacena);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
             this.Load += new System.EventHandler(this.frmAlacena_Load);

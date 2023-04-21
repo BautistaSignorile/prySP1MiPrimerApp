@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlacenaPaginaDeAgregado));
             this.mrcAgregadoDeProductos = new System.Windows.Forms.GroupBox();
             this.cmdConfirmar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
@@ -163,6 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 237);
             this.Controls.Add(this.mrcAgregadoDeProductos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlacenaPaginaDeAgregado";
             this.Text = "Alacena Pagina De Agregado";
             this.mrcAgregadoDeProductos.ResumeLayout(false);
