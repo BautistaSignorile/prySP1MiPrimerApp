@@ -27,5 +27,10 @@ namespace prySP1MiPrimerApp
         {
 
         }
+
+        private void frmAlacena_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

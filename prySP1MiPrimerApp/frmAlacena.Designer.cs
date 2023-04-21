@@ -63,6 +63,7 @@
             this.Controls.Add(this.mrcOrganizadorDeAlacena);
             this.Name = "frmAlacena";
             this.Text = "frmAlacena";
+            this.Load += new System.EventHandler(this.frmAlacena_Load);
             this.mrcOrganizadorDeAlacena.ResumeLayout(false);
             this.ResumeLayout(false);
 
