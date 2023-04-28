@@ -16,7 +16,7 @@ namespace prySP1MiPrimerApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAlacena());
+            Application.Run(new frmPrincipal());
         }
     }
 }

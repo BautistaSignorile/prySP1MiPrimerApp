@@ -32,15 +32,15 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mrcDatos = new System.Windows.Forms.GroupBox();
             this.cboIngreseCategoriaDeGasto = new System.Windows.Forms.ComboBox();
-            this.cmdBorrar = new System.Windows.Forms.Button();
-            this.cmdConfirmar = new System.Windows.Forms.Button();
             this.txtIngresoGastos = new System.Windows.Forms.TextBox();
             this.lblIngreseCategoriaDeGasto = new System.Windows.Forms.Label();
             this.lblIngresoDeDatos = new System.Windows.Forms.Label();
+            this.cmdBorrar = new System.Windows.Forms.Button();
+            this.cmdConfirmar = new System.Windows.Forms.Button();
             this.lblSaldo = new System.Windows.Forms.Label();
             this.txtSaldo = new System.Windows.Forms.TextBox();
             this.lblDeposito = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textDeposito = new System.Windows.Forms.TextBox();
             this.mrcAppRegistroMensual = new System.Windows.Forms.GroupBox();
             this.mrcDatos.SuspendLayout();
             this.mrcAppRegistroMensual.SuspendLayout();
@@ -74,26 +74,6 @@
             this.cboIngreseCategoriaDeGasto.Size = new System.Drawing.Size(107, 21);
             this.cboIngreseCategoriaDeGasto.TabIndex = 6;
             // 
-            // cmdBorrar
-            // 
-            this.cmdBorrar.BackColor = System.Drawing.Color.IndianRed;
-            this.cmdBorrar.Location = new System.Drawing.Point(37, 194);
-            this.cmdBorrar.Name = "cmdBorrar";
-            this.cmdBorrar.Size = new System.Drawing.Size(121, 37);
-            this.cmdBorrar.TabIndex = 5;
-            this.cmdBorrar.Text = "BORRAR";
-            this.cmdBorrar.UseVisualStyleBackColor = false;
-            // 
-            // cmdConfirmar
-            // 
-            this.cmdConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.cmdConfirmar.Location = new System.Drawing.Point(205, 194);
-            this.cmdConfirmar.Name = "cmdConfirmar";
-            this.cmdConfirmar.Size = new System.Drawing.Size(121, 37);
-            this.cmdConfirmar.TabIndex = 4;
-            this.cmdConfirmar.Text = "CONFIRMAR";
-            this.cmdConfirmar.UseVisualStyleBackColor = false;
-            // 
             // txtIngresoGastos
             // 
             this.txtIngresoGastos.Location = new System.Drawing.Point(101, 30);
@@ -118,6 +98,27 @@
             this.lblIngresoDeDatos.Size = new System.Drawing.Size(79, 13);
             this.lblIngresoDeDatos.TabIndex = 0;
             this.lblIngresoDeDatos.Text = "Ingrese gastos:";
+            // 
+            // cmdBorrar
+            // 
+            this.cmdBorrar.BackColor = System.Drawing.Color.IndianRed;
+            this.cmdBorrar.Location = new System.Drawing.Point(37, 194);
+            this.cmdBorrar.Name = "cmdBorrar";
+            this.cmdBorrar.Size = new System.Drawing.Size(121, 37);
+            this.cmdBorrar.TabIndex = 5;
+            this.cmdBorrar.Text = "BORRAR";
+            this.cmdBorrar.UseVisualStyleBackColor = false;
+            // 
+            // cmdConfirmar
+            // 
+            this.cmdConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.cmdConfirmar.Location = new System.Drawing.Point(205, 194);
+            this.cmdConfirmar.Name = "cmdConfirmar";
+            this.cmdConfirmar.Size = new System.Drawing.Size(121, 37);
+            this.cmdConfirmar.TabIndex = 4;
+            this.cmdConfirmar.Text = "CONFIRMAR";
+            this.cmdConfirmar.UseVisualStyleBackColor = false;
+            this.cmdConfirmar.Click += new System.EventHandler(this.cmdConfirmar_Click);
             // 
             // lblSaldo
             // 
@@ -144,17 +145,17 @@
             this.lblDeposito.TabIndex = 7;
             this.lblDeposito.Text = "Deposito:";
             // 
-            // textBox2
+            // textDeposito
             // 
-            this.textBox2.Location = new System.Drawing.Point(90, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 20);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textDeposito.Location = new System.Drawing.Point(90, 50);
+            this.textDeposito.Name = "textDeposito";
+            this.textDeposito.Size = new System.Drawing.Size(89, 20);
+            this.textDeposito.TabIndex = 8;
+            this.textDeposito.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // mrcAppRegistroMensual
             // 
-            this.mrcAppRegistroMensual.Controls.Add(this.textBox2);
+            this.mrcAppRegistroMensual.Controls.Add(this.textDeposito);
             this.mrcAppRegistroMensual.Controls.Add(this.cmdBorrar);
             this.mrcAppRegistroMensual.Controls.Add(this.lblDeposito);
             this.mrcAppRegistroMensual.Controls.Add(this.cmdConfirmar);
@@ -200,7 +201,7 @@
         private System.Windows.Forms.Label lblSaldo;
         private System.Windows.Forms.TextBox txtSaldo;
         private System.Windows.Forms.Label lblDeposito;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textDeposito;
         private System.Windows.Forms.GroupBox mrcAppRegistroMensual;
     }
 }
