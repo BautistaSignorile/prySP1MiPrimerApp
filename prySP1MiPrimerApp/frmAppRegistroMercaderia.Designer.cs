@@ -54,7 +54,7 @@
             this.mrcDatos.Controls.Add(this.lblIngresoDeDatos);
             this.mrcDatos.Location = new System.Drawing.Point(17, 92);
             this.mrcDatos.Name = "mrcDatos";
-            this.mrcDatos.Size = new System.Drawing.Size(328, 96);
+            this.mrcDatos.Size = new System.Drawing.Size(309, 96);
             this.mrcDatos.TabIndex = 0;
             this.mrcDatos.TabStop = false;
             this.mrcDatos.Text = "DATOS";

@@ -12,6 +12,9 @@ namespace prySP1MiPrimerApp
 {
     public partial class frmAlacenaPaginaDeAgregado : Form
     {
+        string varNombreDelProducto;
+        string varCategoria;
+        int varCantidad;
         public frmAlacenaPaginaDeAgregado()
         {
             InitializeComponent();
@@ -24,14 +27,20 @@ namespace prySP1MiPrimerApp
 
         private void cmdConfirmar_Click(object sender, EventArgs e)
         {
-            Form Pagina2 = new frmListado();
-            Pagina2.Show();
+            varNombreDelProducto = txtNombreDeProducto.Text;
+            varCantidad = Convert.ToInt32(lstCantidad.Text);
+            varCategoria = lstCatProductos.Text;
+            lstAlacena.Items.Add(varNombreDelProducto + " " +  varCategoria + " " + varCantidad);
         }
 
         private void cmdCancelar_Click(object sender, EventArgs e)
         {
-            Form Regresar = new frmAlacena();
-            Regresar.Show();
+            
+        }
+
+        private void lstAlacena_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

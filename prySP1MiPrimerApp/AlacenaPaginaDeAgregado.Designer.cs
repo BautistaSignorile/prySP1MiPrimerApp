@@ -36,8 +36,9 @@
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lstCatProductos = new System.Windows.Forms.ComboBox();
-            this.textNombreDeProducto = new System.Windows.Forms.TextBox();
+            this.txtNombreDeProducto = new System.Windows.Forms.TextBox();
             this.lblNombreDeProducto = new System.Windows.Forms.Label();
+            this.lstAlacena = new System.Windows.Forms.ListBox();
             this.mrcAgregadoDeProductos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.mrcAgregadoDeProductos.Controls.Add(this.lblCantidad);
             this.mrcAgregadoDeProductos.Controls.Add(this.lblCategoria);
             this.mrcAgregadoDeProductos.Controls.Add(this.lstCatProductos);
-            this.mrcAgregadoDeProductos.Controls.Add(this.textNombreDeProducto);
+            this.mrcAgregadoDeProductos.Controls.Add(this.txtNombreDeProducto);
             this.mrcAgregadoDeProductos.Controls.Add(this.lblNombreDeProducto);
             this.mrcAgregadoDeProductos.Location = new System.Drawing.Point(12, 12);
             this.mrcAgregadoDeProductos.Name = "mrcAgregadoDeProductos";
@@ -140,12 +141,12 @@
             this.lstCatProductos.Size = new System.Drawing.Size(103, 21);
             this.lstCatProductos.TabIndex = 2;
             // 
-            // textNombreDeProducto
+            // txtNombreDeProducto
             // 
-            this.textNombreDeProducto.Location = new System.Drawing.Point(151, 37);
-            this.textNombreDeProducto.Name = "textNombreDeProducto";
-            this.textNombreDeProducto.Size = new System.Drawing.Size(100, 20);
-            this.textNombreDeProducto.TabIndex = 1;
+            this.txtNombreDeProducto.Location = new System.Drawing.Point(151, 37);
+            this.txtNombreDeProducto.Name = "txtNombreDeProducto";
+            this.txtNombreDeProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreDeProducto.TabIndex = 1;
             // 
             // lblNombreDeProducto
             // 
@@ -158,11 +159,21 @@
             this.lblNombreDeProducto.Text = "Nombre del Producto:";
             this.lblNombreDeProducto.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lstAlacena
+            // 
+            this.lstAlacena.FormattingEnabled = true;
+            this.lstAlacena.Location = new System.Drawing.Point(12, 236);
+            this.lstAlacena.Name = "lstAlacena";
+            this.lstAlacena.Size = new System.Drawing.Size(275, 173);
+            this.lstAlacena.TabIndex = 1;
+            this.lstAlacena.SelectedIndexChanged += new System.EventHandler(this.lstAlacena_SelectedIndexChanged);
+            // 
             // frmAlacenaPaginaDeAgregado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(299, 237);
+            this.ClientSize = new System.Drawing.Size(299, 417);
+            this.Controls.Add(this.lstAlacena);
             this.Controls.Add(this.mrcAgregadoDeProductos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlacenaPaginaDeAgregado";
@@ -177,12 +188,13 @@
 
         private System.Windows.Forms.GroupBox mrcAgregadoDeProductos;
         private System.Windows.Forms.ComboBox lstCatProductos;
-        private System.Windows.Forms.TextBox textNombreDeProducto;
+        private System.Windows.Forms.TextBox txtNombreDeProducto;
         private System.Windows.Forms.Label lblNombreDeProducto;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.ComboBox lstCantidad;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Button cmdConfirmar;
         private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.ListBox lstAlacena;
     }
 }
